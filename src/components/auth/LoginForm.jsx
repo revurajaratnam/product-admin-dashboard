@@ -60,7 +60,7 @@ export default function LoginForm() {
       </Button>
 
       <p className="text-center text-xs text-gray-400">
-        Demo credentials: emilys / emilyspass
+        Demo credentials: admin / admin123
       </p>
     </form>
   );

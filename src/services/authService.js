@@ -1,14 +1,22 @@
-import api from "../lib/axios";
-
 const authService = {
   async login(username, password) {
-    const { data } = await api.post("/auth/login", {
-      username,
-      password,
-      expiresInMins: 60 * 24 * 7,
-    });
-    return data;
+    const validUser = "admin";
+    const validPass = "admin123";
+
+    if (username === validUser && password === validPass) {
+      return {
+        id: 1,
+        username: "admin",
+        firstName: "Admin",
+        lastName: "User",
+        email: "admin@example.com",
+        token: "custom-demo-token",
+      };
+    }
+
+    throw {
+      status: 401,
+      message: "Invalid username or password.",
+    };
   },
 };
-
-export default authService;

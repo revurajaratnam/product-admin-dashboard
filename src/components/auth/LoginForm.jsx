@@ -36,7 +36,7 @@ export default function LoginForm() {
         onChange={(e) => setForm((f) => ({ ...f, username: e.target.value }))}
         error={fieldErrors.username}
         autoComplete="username"
-        placeholder="emilys"
+        placeholder="admin"
       />
       <Input
         id="password"
@@ -46,7 +46,7 @@ export default function LoginForm() {
         onChange={(e) => setForm((f) => ({ ...f, password: e.target.value }))}
         error={fieldErrors.password}
         autoComplete="current-password"
-        placeholder="emilyspass"
+        placeholder="admin123"
       />
 
       {error && (
@@ -60,7 +60,7 @@ export default function LoginForm() {
       </Button>
 
       <p className="text-center text-xs text-gray-400">
-        Demo credentials: admin / admin123
+        Use: admin / admin123
       </p>
     </form>
   );

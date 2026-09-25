@@ -59,7 +59,7 @@ export default function LoginForm() {
         {loading ? "Logging in..." : "Log In"}
       </Button>
 
-      <p className="text-center text-xs text-gray-400">
+      <p className="text-center text-xs text-gray-200">
         Use: admin / admin123
       </p>
     </form>

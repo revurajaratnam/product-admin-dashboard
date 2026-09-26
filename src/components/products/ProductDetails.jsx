@@ -78,7 +78,7 @@ export default function ProductDetails({ product }) {
           <div className="mt-6 flex gap-2">
             <Link
               href={`/products/edit/${product.id}`}
-              className="rounded-lg bg-brand-600 px-4 py-2 text-sm font-medium text-white hover:bg-brand-700"
+              className="rounded-lg bg-red-600 px-4 py-2 text-sm font-medium text-white hover:bg-brand-700"
             >
               Edit Product
             </Link>

@@ -16,7 +16,7 @@ export default function ProductCard({ product, onDeleteClick }) {
         className="h-16 w-16 shrink-0 rounded-lg object-cover"
       />
       <div className="min-w-0 flex-1">
-        <p className="truncate font-medium text-gray-900">{product.title}</p>
+        <p className="truncate font-medium text-red-900">{product.title}</p>
         <p className="text-xs capitalize text-gray-500">{product.category}</p>
         <div className="mt-1 flex items-center gap-3 text-sm text-gray-700">
           <span>{formatCurrency(product.price)}</span>
@@ -26,7 +26,7 @@ export default function ProductCard({ product, onDeleteClick }) {
           </span>
         </div>
         <div className="mt-2 flex gap-3 text-xs font-medium">
-          <Link href={`/products/${product.id}`} className="text-brand-600">
+          <Link href={`/products/${product.id}`} className="text-blue-900">
             View
           </Link>
           <Link href={`/products/edit/${product.id}`} className="text-gray-600">

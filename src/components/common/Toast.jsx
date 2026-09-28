@@ -6,8 +6,8 @@ import { classNames } from "../../lib/utils";
 const ToastContext = createContext(null);
 
 const STYLES = {
-  success: "bg-green-600",
-  error: "bg-red-600",
+  success: "bg-green-700",
+  error: "bg-red-400",
   info: "bg-gray-800",
 };
 

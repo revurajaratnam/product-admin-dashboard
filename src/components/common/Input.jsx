@@ -15,7 +15,7 @@ export default function Input({ label, error, id, className = "", ...props }) {
         className={classNames(
           "w-full rounded-lg border px-3 py-2 text-sm text-gray-900 placeholder:text-gray-400",
           "focus:outline-none focus:ring-2 focus:ring-brand-500",
-          error ? "border-red-400" : "border-gray-300",
+          error ? "border-red-800" : "border-gray-300",
           className
         )}
         aria-invalid={Boolean(error)}

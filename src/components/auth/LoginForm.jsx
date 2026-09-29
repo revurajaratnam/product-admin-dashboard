@@ -50,7 +50,7 @@ export default function LoginForm() {
       />
 
       {error && (
-        <p role="alert" className="rounded-lg bg-red-50 px-3 py-2 text-sm text-red-900">
+        <p role="alert" className="rounded-lg bg-red-50 !px-3 p!y-2 text-sm text-red-900">
           {error}
         </p>
       )}

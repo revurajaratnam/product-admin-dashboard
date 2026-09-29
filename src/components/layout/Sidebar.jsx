@@ -17,7 +17,7 @@ export default function Sidebar() {
       <div className="px-4 py-4">
         <span className="text-base font-bold text-brand-600">Admin Dashboard</span>
       </div>
-      <ul className="flex gap-1 overflow-x-auto px-2 pb-2 sm:flex-col sm:overflow-visible sm:px-3">
+      <ul className="flex gap-1 overflow-x-auto !px-2 !pb-2 sm:flex-col sm:overflow-visible sm:px-3">
         {LINKS.map((link) => {
           const active = pathname === link.href;
           return (
@@ -25,7 +25,7 @@ export default function Sidebar() {
               <Link
                 href={link.href}
                 className={classNames(
-                  "block whitespace-nowrap rounded-lg px-3 py-2 text-sm font-medium",
+                  "block whitespace-nowrap rounded-lg px-3 !py-2 text-sm font-medium",
                   active
                     ? "bg-brand-50 text-brand-700"
                     : "text-gray-600 hover:bg-gray-100"

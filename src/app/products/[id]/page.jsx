@@ -51,9 +51,9 @@ export default function ProductDetailsPage({ params }) {
 
   if (notFound) {
     return (
-      <div className="flex flex-col items-center justify-center gap-3 p-10 text-center">
+      <div className="flex flex-col items-center justify-center gap-4 p-10 text-center">
         <h1 className="text-xl font-semibold text-gray-900">Product Not Found</h1>
-        <p className="text-sm text-gray-500">
+        <p className="text-sm text-gray-600">
           We couldn&apos;t find a product with id &ldquo;{id}&rdquo;.
         </p>
         <Link href="/products" className="text-sm font-medium text-brand-600 hover:underline">

@@ -25,7 +25,7 @@ export default function NewProductPage() {
   }
 
   return (
-    <div className="mx-auto max-w-2xl p-4 sm:p-6">
+    <div className="!mx-auto max-w-2xl !p-5 sm:!p-6">
       <h1 className="mb-4 text-xl font-semibold text-gray-900">Add Product</h1>
       <ProductForm submitLabel="Save Product" onSubmit={handleSubmit} apiError={apiError} />
     </div>

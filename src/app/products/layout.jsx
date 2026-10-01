@@ -7,7 +7,7 @@ export default function ProductsLayout({ children }) {
       <Sidebar />
       <div className="flex min-h-screen flex-1 flex-col">
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 ">{children}</main>
       </div>
     </div>
   );

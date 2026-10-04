@@ -12,7 +12,7 @@ export default function ProductPagination({ page, limit, total, onPageChange, on
   const pageNumbers = getPageWindow(page, totalPages);
 
   return (
-    <div className="flex flex-col items-center justify-between gap-3 border-t border-gray-100 px-4 py-3 sm:flex-row">
+    <div className="flex flex-col items-center justify-between gap-3 border-t border-gray-100 px-4 !py-3 sm:flex-row">
       <div className="flex items-center gap-3 text-sm text-gray-600">
         <span>
           Showing {start}–{end} of {total}
@@ -43,7 +43,7 @@ export default function ProductPagination({ page, limit, total, onPageChange, on
         </Button>
         {pageNumbers.map((n, i) =>
           n === "..." ? (
-            <span key={`ellipsis-${i}`} className="px-2 text-gray-400">
+            <span key={`ellipsis-${i}`} className="!px-2 text-gray-400">
               …
             </span>
           ) : (

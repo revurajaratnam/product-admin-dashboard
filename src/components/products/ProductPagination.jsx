@@ -51,7 +51,7 @@ export default function ProductPagination({ page, limit, total, onPageChange, on
               key={n}
               onClick={() => onPageChange(n)}
               aria-current={n === page ? "page" : undefined}
-              className={`min-w-[2.25rem] rounded-lg px-2 py-2 text-sm font-medium ${
+              className={`min-w-[2.25rem] rounded-lg !px-2 !py-2 text-sm font-medium ${
                 n === page ? "bg-brand-600 text-white" : "text-gray-600 hover:bg-gray-100"
               }`}
             >

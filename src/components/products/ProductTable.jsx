@@ -43,7 +43,7 @@ export default function ProductTable({ products, sort, order, onSortChange, onDe
       <tbody className="divide-y divide-gray-100">
         {products.map((p) => (
           <tr key={p.id} className="hover:bg-gray-50">
-            <td className="px-4 py-3">
+            <td className="!px-4 !py-3">
               <Image
                 src={p.thumbnail || p.images?.[0] || "/placeholder.svg"}
                 alt={p.title}
@@ -56,8 +56,8 @@ export default function ProductTable({ products, sort, order, onSortChange, onDe
             <td className="max-w-[16rem] truncate px-4 py-3 font-medium text-gray-900">
               {p.title}
             </td>
-            <td className="px-4 py-3 capitalize text-gray-600">{p.category}</td>
-            <td className="px-4 py-3 text-gray-900">{formatCurrency(p.price)}</td>
+            <td className="!px-4 !py-3 capitalize text-gray-600">{p.category}</td>
+            <td className="!px-4 py-3 text-gray-900">{formatCurrency(p.price)}</td>
             <td className="px-4 py-3 text-gray-900">⭐ {Number(p.rating).toFixed(1)}</td>
             <td className="px-4 py-3">
               <span

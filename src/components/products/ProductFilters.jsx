@@ -38,7 +38,7 @@ export default function ProductFilters({ category, onCategoryChange, searchActiv
         ))}
       </Select>
       {searchActive && (
-        <p className="mt-1 text-xs text-gray-400">
+        <p className="!mt-1 text-xs text-gray-400">
           Applied on top of your search results.
         </p>
       )}

@@ -40,7 +40,7 @@ export default function ProductTable({ products, sort, order, onSortChange, onDe
           <th className="px-4 py-3 text-right">Actions</th>
         </tr>
       </thead>
-      <tbody className="divide-y divide-gray-100">
+      <tbody className="divide-y divide-gray-200">
         {products.map((p) => (
           <tr key={p.id} className="hover:bg-gray-50">
             <td className="!px-4 !py-3">

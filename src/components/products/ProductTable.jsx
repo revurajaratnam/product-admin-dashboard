@@ -29,7 +29,7 @@ export default function ProductTable({ products, sort, order, onSortChange, onDe
 
   return (
     <table className="hidden w-full text-left text-sm sm:table">
-      <thead className="border-b border-gray-100 bg-gray-50 text-xs uppercase tracking-wide text-gray-500">
+      <thead className="border-b border-gray-500 bg-gray-50 text-xs uppercase tracking-wide text-gray-500">
         <tr>
           <th className="px-4 py-3">Image</th>
           <th className="px-4 py-3">{headerFor(SORT_COLUMNS[0])}</th>
@@ -40,7 +40,7 @@ export default function ProductTable({ products, sort, order, onSortChange, onDe
           <th className="px-4 py-3 text-right">Actions</th>
         </tr>
       </thead>
-      <tbody className="divide-y divide-gray-100">
+      <tbody className="divide-y divide-gray-500">
         {products.map((p) => (
           <tr key={p.id} className="hover:bg-gray-50">
             <td className="!px-4 !py-3">
